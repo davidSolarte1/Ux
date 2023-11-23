@@ -9,74 +9,154 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <title>Recursos</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Competencias</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#" style="width: 16rem;">Aplicación</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Inicio <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Detalles</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Recursos
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Cursos en linea</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Libros</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <main>
-        <div class="user" style="background-color: bisque; width: 16rem; border: 1px; border-style: solid; display: flex; height: 91.5vh; flex-direction: column;">
-    
-            <div class="card" >
-                <img class="card-img-top" src="img/user.png" alt="Card image cap" style="height: 10rem; width: 10rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Nombre Usuario</h5>
-                </div>
-            </div>
-            <ul class="list-group list-group-flush" style="margin-top: auto;">
-                <li class="list-group-item"><a href="#">Editar Perfil</a></li>
-                <li class="list-group-item"><a href="#">Mis cursos</a></li>
-                <li class="list-group-item"><a href="#">Ver resultados</a></li>
-            </ul>
-    
-            <button class="btn btn-danger" style="margin-top: auto; width: 100%;">Cerrar Sesión</button>
-    
+    <div class="container mt-4 title-container">
+      <h1>Competencias Genéricas UDENAR</h1>
+    </div>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Inicio</a>
+        <a class="navbar-brand" href="#">Detalles</a>
+        <div class="navbar-brand dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Recursos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Cursos en línea</a>
+            <a class="dropdown-item" href="#">Libros</a>
+          </div>
         </div>
+        <div class="ml-auto">
+          <!-- Icono de perfil con imagen personalizada -->
+          <span class="navbar-text">
+            <img
+              src="img\user.png"
+              alt="Usuario"
+              style="width: 24px; height: 24px; margin-right: 5px"
+            />
+            Usuario
+          </span>
+        </div>
+      </nav>
+    </div>
+
+    <main class="container mt-4" style="margin-bottom: 15px;">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card card-libros">
+            <div class="card-body">
+              <h5 class="card-title">Sugerencia de Libros</h5>
+              <h2>Matemáticas</h2>
+              <ul>
+                <li><a href="#">"Cálculo de una Variable" - James Stewart.</a></li>
+                <li><a href="#">"Álgebra Lineal" - Howard Anton.</a></li>
+                <li><a href="#">"Ecuaciones Diferenciales" - Dennis G. Zill.</a></li>
+              </ul>
+
+              <h2>Física</h2>
+              <ul>
+                <li><a href="#">"Física para Científicos e Ingenieros" - Serway y Jewett.</a></li>
+                <li><a href="#">"Mecánica Vectorial para Ingenieros" - Beer y Johnston.</a></li>
+                <li><a href="#">"Termodinámica" - Yunus A. Cengel y Michael A. Boles.</a></li>
+              </ul>
+
+              <h2>Mecánica de Materiales</h2>
+              <ul>
+                <li><a href="#">"Mecánica de Materiales" - Ferdinand P. Beer, E. Russell Johnston Jr., John T. DeWolf.</a></li>
+                <li><a href="#">"Resistencia de Materiales" - Andrew Pytel, Ferdinand L. Singer.</a></li>
+              </ul>
+
+              <h2>Circuitos Eléctricos</h2>
+              <ul>
+                <li><a href="#">"Análisis de Circuitos" - Robert L. Boylestad, Louis Nashelsky.</a></li>
+                <li><a href="#">"Fundamentos de Circuitos Eléctricos" - Charles K. Alexander, Matthew N. O. Sadiku.</a></li>
+              </ul>
+              <h2>Programación y Computación:</h2>
+              <ul>
+                <li><a href="#">"Estructuras de Datos y Algoritmos" - Robert L. Kruse, Bruce P. Leung, Clovis L. Tondo.</a></li>
+                <li><a href="#">"Introducción a la Programación en Java" - Robert Sedgewick, Kevin Wayne.</a></li>
+              </ul>
+              <h2>Ingeniería Económica</h2>
+              <ul>
+                <li><a href="#">"Ingeniería Económica" - Leland Blank, Anthony Tarquin.</a></li>
+                <li><a href="#">"Evaluación de Proyectos" - Nassir Sapag Chain, Reinaldo Sapag Chain.</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-cursos">
+            <div class="card-body">
+              <h5 class="card-title">Sugerencia de Cursos en Línea</h5>
+              <h2>Coursera</h2>
+              <ul>
+                <li><a href="#">"Calculus and Linear Algebra" - Imperial College London.</a></li>
+                <li><a href="#">"Introduction to Engineering Mechanics" - Georgia Institute of Technology.</a></li>
+                <li><a href="#">"Differential Equations for Engineers" - The Hong Kong University of Science and Technology.</a></li>
+                <li><a href="#">"Electricity and Magnetism" - Rice University.</a></li>
+              </ul>
+
+              <h2>edX</h2>
+              <ul>
+                <li><a href="#">"Introduction to Computer Science and Programming Using Python" - Massachusetts Institute of Technology (MIT).</a></li>
+                <li><a href="#">"Mechanics: Kinematics and Dynamics" - Massachusetts Institute of Technology (MIT).</a></li>
+                <li><a href="#">"Introduction to Engineering Structures" - Delft University of Technology.</a></li>
+              </ul>
+
+              <h2>Udacity</h2>
+              <ul>
+                <li><a href="#">"Data Structures and Algorithms Nanodegree" - Udacity.</a></li>
+                <li><a href="#">"Introduction to Programming Nanodegree" - Udacity.</a></li>
+                <li><a href="#">"Machine Learning Engineer Nanodegree" - Udacity.</a></li>
+              </ul>
+
+              <h2>Khan Academy</h2>
+              <ul>
+                <li><a href="#">"Multivariable Calculus" - Khan Academy.</a></li>
+                <li><a href="#">"Physics" - Khan Academy.</a></li>
+                <li><a href="#">"Electrical Engineering" - Khan Academy.</a></li>
+              </ul>
+              <h2>LinkedIn Learning</h2>
+              <ul>
+                <li><a href="#">"Learning Java" - Kathryn Hodge.</a></li>
+                <li><a href="#">"Learning Python" - Joe Marini.</a></li>
+                <li><a href="#">"Engineering Mathematics: First Year Calculus" - Anthony Croft.</a></li>
+              </ul>
+              <h2>MIT OpenCourseWare</h2>
+              <ul>
+                <li><a href="#">"Circuits and Electronics" - Massachusetts Institute of Technology (MIT).</a></li>
+                <li><a href="#">"Introduction to Computer Science and Programming in Python" - Massachusetts Institute of Technology (MIT).</a></li>
+                <li><a href="#">"Structural Mechanics" - Massachusetts Institute of Technology (MIT).</a></li>
+              </ul>
+              <h2>Codecademy</h2>
+              <ul>
+                <li><a href="#">"Learn Java" - Codecademy.</a></li>
+                <li><a href="#">"Learn Python" - Codecademy.</a></li>
+                <li><a href="#">"Introduction to JavaScript" - Codecademy.</a></li>
+              </ul>
+              <h2>Udemy</h2>
+              <ul>
+                <li><a href="#">"Complete Python Bootcamp: Go from zero to hero in Python 3" - Jose Portilla.</a></li>
+                <li><a href="#">"Complete Java Masterclass" - Tim Buchalka.</a></li>
+                <li><a href="#">"Engineering Mechanics - Statics" - Saad Zafar.</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

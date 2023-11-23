@@ -1,0 +1,39 @@
+body {
+    background-color: #36343427; /* Gris claro */
+    color: #333;
+}
+
+.navbar {
+    background-color: #36343427; /* Gris más claro para la barra de navegación */
+}
+
+.navbar-brand,
+.nav-link,
+.dropdown-item {
+    color: #353535 !important; /* Texto gris oscuro para enlaces en la barra de navegación */
+    
+}
+
+.title-container {
+   
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.dropdown-menu {
+    background-color: #e0e0e0; /* Gris claro para el menú desplegable */
+}
+
+.card-libros {
+    background-color: #d9edf7; /* Azul claro */
+    border: 1px solid #bce8f1;
+}
+
+.card-cursos {
+    background-color: #e8f5e9; /* Verde claro */
+    border: 1px solid #c8e6c9;
+}
+
+.card-title {
+    color: #333; /* Texto gris oscuro para el título de la tarjeta */
+}
