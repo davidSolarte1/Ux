@@ -14,24 +14,30 @@ body {
     
 }
 
+.title{
+    padding: 20px;
+}
+
 .title-container {
-   
-    padding: 10px;
+    padding: 0px;
     margin-bottom: 20px;
+    background-color: #93c05c
 }
 
 .dropdown-menu {
-    background-color: #e0e0e0; /* Gris claro para el menú desplegable */
+    background-color: #e1e1e1; /* Gris claro para el menú desplegable */
 }
 
 .card-libros {
     background-color: #d9edf7; /* Azul claro */
-    border: 1px solid #bce8f1;
+    border: 3px solid #bce8f1;
+    border-radius: 15px
 }
 
 .card-cursos {
     background-color: #e8f5e9; /* Verde claro */
-    border: 1px solid #c8e6c9;
+    border: 3px solid #c8e6c9;
+    border-radius: 15px
 }
 
 .card-title {
